@@ -15,7 +15,7 @@ def getAddressInfo(address):
     Returns:
         str: 高德地址解码api返回的地址相关信息
     """
-    qkey = "6cf325f2301ce28692d7927949497138"
+    qkey = "高德开放平台申请的key"
     city = "郑州"
     params = {"key": qkey, "city": city, "address": address}
     result = rq.get("https://restapi.amap.com/v3/geocode/geo",
